@@ -20,9 +20,9 @@ public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotBlank
-	@Size (max = 40)
+	@Size(max = 40)
 	private String name;
 
 	@OneToMany(mappedBy = "department")
